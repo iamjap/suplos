@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-01-2021 a las 22:12:19
+-- Tiempo de generación: 01-02-2021 a las 03:09:18
 -- Versión del servidor: 10.4.8-MariaDB
 -- Versión de PHP: 7.3.11
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `intelcost_bienes`
 --
+CREATE DATABASE IF NOT EXISTS `intelcost_bienes` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+USE `intelcost_bienes`;
 
 -- --------------------------------------------------------
 
@@ -50,7 +52,7 @@ ALTER TABLE `bienes_guardados`
 -- AUTO_INCREMENT de la tabla `bienes_guardados`
 --
 ALTER TABLE `bienes_guardados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
